@@ -5,10 +5,10 @@ function App() {
         <div className="calculator">
             <div className="output">
                 <div className="previous__output">
-
+                    x
                 </div>
                 <div className="current__output">
-
+                    x
                 </div>
             </div>
             <button className="span_two">AC</button>

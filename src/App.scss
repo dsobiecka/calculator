@@ -1,0 +1,93 @@
+.calculator {
+  width: 30%;
+  margin: 6% auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .output {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    width: 400px;
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 15px 10px 5px 0;
+
+    .previous__output {
+      font-size: 1.5rem;
+    }
+
+    .current__output {
+      font-size: 2.5rem;
+    }
+  }
+
+  .span_two {
+    width: 200px;
+    height: 100px;
+    min-width: 50%;
+    max-width: 50%;
+  }
+
+  button {
+    width: 100px;
+    height: 100px;
+    min-width: 25%;
+    max-width: 25%;
+    cursor: pointer;
+    border: 1px solid white;
+    font-size: 2rem;
+    outline: none;
+    background-color: lightgray;
+
+    &:hover {
+      background-color: darkgray;
+    }
+
+    &:focus {
+      background-color: darkgray;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .calculator {
+    width: 50%;
+    margin: 3% auto;
+
+    .output {
+      width: 240px;
+      padding: 15px 10px 5px 0;
+
+      .previous__output {
+        font-size: 0.8rem;
+      }
+
+      .current__output {
+        font-size: 1.4rem;
+      }
+    }
+
+    .span_two {
+      width: 120px;
+      height: 60px;
+    }
+
+    button {
+      width: 60px;
+      height: 60px;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .calculator {
+    width: 90%;
+  }
+}
