@@ -1,14 +1,19 @@
 .calculator {
-  width: 30%;
+  width: 25%;
   margin: 6% auto;
+  padding: 10px;
+  background-color: #C5C4C0;
+  border: 3px solid #444444;
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  border-radius: 10px;
 
   .output {
-    background-color: #1f1f1f;
-    color: #ffffff;
+    background-color: #727775;
+    border: 6px solid #4F4D46;
+    color: #0f0f0f;
     width: 400px;
     min-width: 100%;
     max-width: 100%;
@@ -17,6 +22,7 @@
     align-items: flex-end;
     flex-direction: column;
     padding: 15px 10px 5px 0;
+    border-radius: 10px;
 
     .previous__output {
       font-size: 1.5rem;
@@ -28,29 +34,32 @@
   }
 
   .span_two {
-    width: 200px;
-    height: 100px;
-    min-width: 50%;
-    max-width: 50%;
+    height: 80px;
+    min-width: calc(50% - 20px);
+    max-width: calc(50% - 20px);
   }
 
   button {
-    width: 100px;
-    height: 100px;
-    min-width: 25%;
-    max-width: 25%;
+    height: 80px;
+    min-width: calc(25% - 20px);
+    max-width: calc(25% - 20px);
     cursor: pointer;
-    border: 1px solid white;
+    border: 2px solid #4F4D46;
+    border-radius: 10px;
+    margin: 10px;
     font-size: 2rem;
     outline: none;
-    background-color: lightgray;
+    background: linear-gradient(145deg, #fefefe, #d5d5d5);
+    box-shadow: 4px 4px 8px #c9c9c9, -4px -4px 8px #ffffff;
 
     &:hover {
-      background-color: darkgray;
+      background: #ededed;
+      box-shadow: inset 4px 4px 8px #c9c9c9, inset -4px -4px 8px #ffffff;
     }
 
     &:focus {
-      background-color: darkgray;
+      background: #ededed;
+      box-shadow: inset 4px 4px 8px #c9c9c9, inset -4px -4px 8px #ffffff;
     }
   }
 }
